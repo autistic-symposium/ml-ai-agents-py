@@ -40,7 +40,7 @@ Download and install [MuJoCo](https://www.roboti.us/index.html).
 You will also need to register for a license, which asks for a machine ID. The documentation on the website is incomplete, so just download the suggested script and run:
 
 ```bash
-mv getid_osx.dmg getid_osx.dms
+mv getid_osx getid_osx.dms
 ./getid_osx.dms
 ```
 
