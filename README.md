@@ -1,11 +1,11 @@
 # Z ML Energy-Based Models
  
 
-This repository contains adapted code for [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf).
+This repository contains an adapted code for [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf).
 
 ## Installing locally
 
-### Install system's requirement
+### Install the system's requirement
 
 ```bash
 brew install gcc@6
@@ -31,22 +31,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Note that this is an adapted requirement file, since the [OpenAI's original](https://github.com/openai/ebm_code_release/blob/master/requirements.txt) is not complete/correct.
+Note that this is an adapted requirement file since the [OpenAI's original](https://github.com/openai/ebm_code_release/blob/master/requirements.txt) is not complete/correct.
 
 ### Install MuJoCo
 
 Download and install [MuJoCo](https://www.roboti.us/index.html). 
 
-You will also need to register for a license, which asks for a machine ID. The documentation in the website is incomplete, so just download the suggested script and run:
+You will also need to register for a license, which asks for a machine ID. The documentation on the website is incomplete, so just download the suggested script and run:
 
 ```bash
 mv getid_osx.dmg getid_osx.dms
 ./getid_osx.dms
 ```
 
-### Download pretrained models (exmples)
+### Download pre-trained models (exmples)
 
-Download all [pretrained models](https://sites.google.com/view/igebm/home) and unzip into a local folder `cachedir`:
+Download all [pre-trained models](https://sites.google.com/view/igebm/home) and unzip into a local folder `cachedir`:
 
 ```bash
 mkdir cachedir
@@ -63,7 +63,7 @@ OpenAI's original code contains [hardcoded constants that only work on Linux](ht
 
 ### Parallelization with `mpiexec` 
 
-All code supports horovod execution, so model training can be increased substantially by using multiple different workers by running each command.
+All code supports [`horovod` execution](https://github.com/horovod/horovod), so model training can be increased substantially by using multiple different workers by running each command.
 ```
 mpiexec -n <worker_num>  <command>
 ```
@@ -188,11 +188,12 @@ python ebm_combine.py --task=conceptcombine --exp_size=<exp_size> --exp_shape=<e
 
 ## TODO
 
-* Run in docker/kubernetes/Orquestra.
-* Run and extract resuts from all examples.
-* Make tests/benchamer with `mpiexec`.
-* Create an `env` file for constants and parameters.
-* Upgrade all the libraries, upgrade to TF2.
+* [ ] Run in docker/kubernetes/Orquestra.
+* [ ] Run and extract resuts from all examples.
+* [ ] Understand `horovod`.
+* [ ] Make tests/benchamer with `mpiexec`. 
+* [ ] Create an `env` file for constants and parameters.
+* [ ] Upgrade all the libraries, upgrade to TF2.
 
 
 ---
