@@ -1,4 +1,4 @@
-# Z ML Energy-Based Models
+# z-EMBs
  
 
 This repository contains an adapted code for [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf).
