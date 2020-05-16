@@ -184,20 +184,6 @@ Once models are trained, they can be sampled from jointly by running:
 python ebm_combine.py --task=conceptcombine --exp_size=<exp_size> --exp_shape=<exp_shape> --exp_pos=<exp_pos> --exp_rot=<exp_rot> --resume_size=<resume_size> --resume_shape=<resume_shape> --resume_rot=<resume_rot> --resume_pos=<resume_pos>
 ```
 
---- 
-
-## TODO
-
-* [ ] Run in docker/kubernetes/Orquestra.
-* [ ] Run and extract resuts from all examples.
-* [ ] Understand `horovod`.
-* [ ] Make tests/benchamer with `mpiexec`. 
-* [ ] Create an `env` file for constants and parameters.
-* [ ] Upgrade all the libraries, upgrade to TF2.
-
-
----
-
 ## References
 
 * [Our internal docs in EBMs](https://docs.zapos.io/algos/classical_machine_learning/energy_based_models/).
