@@ -14,6 +14,7 @@ brew install pkg-config
 ```
 
 
+
 There is a [bug](https://github.com/open-mpi/ompi/issues/7516) in open-mpi for the specific libraries in this problem (`PMIX ERROR: ERROR`) that can be fixed with:
 
 ```
