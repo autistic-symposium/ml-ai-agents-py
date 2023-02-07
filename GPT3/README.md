@@ -16,4 +16,4 @@
 
 ### cool projects
 
-* [travel here, by dabit](https://gpt-travel-advisor.vercel.app/)
+* [travel hero, by dabit](https://gpt-travel-advisor.vercel.app/)
