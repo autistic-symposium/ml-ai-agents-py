@@ -13,3 +13,7 @@
   * resources and projects on gpt3
 
 <br>
+
+
+* ⛓ [crypto tokens](crypto_tokens)
+  * research on crypto projects in the niche of blockchain-based ai
