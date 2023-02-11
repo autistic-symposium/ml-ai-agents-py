@@ -2,6 +2,13 @@
 
 <br>
 
+
+<br>
+
+----
+
+### resources
+
 * [singularityDAO](https://www.coingecko.com/en/coins/singularitydao)
 * [DeepBrain Chain](https://www.coingecko.com/en/coins/deepbrain-chain)
 * [Vectorspace AI](https://www.coingecko.com/en/coins/vectorspace-ai)
