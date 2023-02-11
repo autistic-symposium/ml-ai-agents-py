@@ -1,10 +1,10 @@
-## Training models with OpenAI's resources
+## training models with openai's resources, and other resources
  
 <br>
 
 
-* 🧬 [QuantumAI](EBMs)
-  * an adaptation of OpenAI's Implicit Generation and Generalization in Energy Based Models
+* 🧬 [quantumai](EBMs)
+  * my adaptation of openai's implicit generation and generalization in energy based models
  
  
 <br>
