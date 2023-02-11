@@ -1,6 +1,10 @@
-## GPT3
+## gpt3
 
 <br>
+
+<br>
+
+-----
 
 ### resources
 
@@ -10,10 +14,4 @@
 * [translate sql](https://platform.openai.com/playground/p/default-sql-translate?model=code-davinci-002)
 * [calculate time complexity](https://platform.openai.com/playground/p/default-time-complexity?model=text-davinci-003)
 * [text to programmatic command](https://platform.openai.com/playground/p/default-text-to-command?model=text-davinci-003)
-
-
-<br>
-
-### cool projects
-
 * [travel hero, by dabit](https://gpt-travel-advisor.vercel.app/)
