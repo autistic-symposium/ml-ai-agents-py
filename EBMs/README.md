@@ -1,9 +1,17 @@
 # QuantumAI: Training EMBs using OpenAI's resources
- 
 
-This repository contains an adapted code for [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf).
+<br>
+
+ 
+This repository contains my adapted code from [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf), plus some  resources from external researchers.
+
+<br>
+
+---
 
 ## Installing locally
+
+<br>
 
 ### Install the system's requirement
 
@@ -21,6 +29,7 @@ There is a [bug](https://github.com/open-mpi/ompi/issues/7516) in open-mpi for t
 export PMIX_MCA_gds=^ds12
 ```
 
+<br>
 
 ### Install requirements.txt
 
@@ -34,6 +43,8 @@ pip install -r requirements.txt
 
 Note that this is an adapted requirement file since the [OpenAI's original](https://github.com/openai/ebm_code_release/blob/master/requirements.txt) is not complete/correct.
 
+<br>
+
 ### Install MuJoCo
 
 Download and install [MuJoCo](https://www.roboti.us/index.html). 
@@ -45,7 +56,13 @@ mv getid_osx getid_osx.dms
 ./getid_osx.dms
 ```
 
-### Download pre-trained models (exmples)
+<br>
+
+---
+
+## Download pre-trained models (exmples)
+
+<br>
 
 Download all [pre-trained models](https://sites.google.com/view/igebm/home) and unzip into a local folder `cachedir`:
 
@@ -53,14 +70,22 @@ Download all [pre-trained models](https://sites.google.com/view/igebm/home) and 
 mkdir cachedir
 ```
 
+<br>
+
+
 ### Setting results directory
+
+<br>
 
 OpenAI's original code contains [hardcoded constants that only work on Linux](https://github.com/openai/ebm_code_release/blob/master/data.py#L218). We changed this to a constant (`ROOT_DIR = "./results"`) in the top of `data.py`. 
 
+<br>
 
 ----
 
 ## Running
+
+<br>
 
 ### Parallelization with `mpiexec` 
 
@@ -68,6 +93,8 @@ All code supports [`horovod` execution](https://github.com/horovod/horovod), so 
 ```
 mpiexec -n <worker_num>  <command>
 ```
+
+<br>
 
 ### Examples of Training on example datasets
 
@@ -122,6 +149,7 @@ b:0: 0.4506262540817261,
 Inception score of 1.2397289276123047 with std of 0.0
 ```
 
+<br>
 
 #### CIFAR-10 Conditional:
 
@@ -129,7 +157,7 @@ Inception score of 1.2397289276123047 with std of 0.0
 python train.py --exp=cifar10_cond --dataset=cifar10 --num_steps=60 --batch_size=128 --step_lr=10.0 --proj_norm=0.01 --zero_kl --replay_batch --cclass
 ```
 
-
+<br>
 
 #### ImageNet 32x32 Conditional:
 
@@ -137,11 +165,15 @@ python train.py --exp=cifar10_cond --dataset=cifar10 --num_steps=60 --batch_size
 python train.py --exp=imagenet_cond --num_steps=60  --wider_model --batch_size=32 step_lr=10.0 --proj_norm=0.01 --replay_batch --cclass --zero_kl --dataset=imagenet --imagenet_path=<imagenet32x32 path>
 ```
 
+<br>
+
 #### ImageNet 128x128 Conditional:
 
 ```
 python train.py --exp=imagenet_cond --num_steps=50 --batch_size=16 step_lr=100.0 --replay_batch --swish_act --cclass --zero_kl --dataset=imagenetfull --imagenet_datadir=<full imagenet path>
 ```
+
+<br>
 
 #### Imagenet Demo
 
@@ -158,6 +190,8 @@ python ebm_sandbox.py --task=crossclass --num_steps=40 --exp=cifar10_cond --resu
 ```
 
 
+<br>
+
 #### Generalization
 
 To test generalization to out of distribution classification for SVHN (with similar commands for other datasets)
@@ -170,6 +204,7 @@ To test classification on CIFAR-10 using a conditional model under either L2 or 
 python ebm_sandbox.py --task=label --exp=cifar10_wider_model_cond --resume_iter=21600 --lnorm=-1 --pgd=<number of pgd steps> --num_steps=10 --lival=<li bound value> --wider_model
 ```
 
+<br>
 
 #### Concept Combination
 
