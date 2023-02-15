@@ -1,19 +1,19 @@
-## training models with openai's resources, and other resources
+## training models with openai's resources
  
 <br>
 
 
-* 🧬 [quantumai](EBMs)
+* 🧬 **[quantumai](EBMs)**
   * my adaptation of openai's implicit generation and generalization in energy based models
  
  
 <br>
 
-* 🦾 [gpt3](GPT3)
+* 🦾 **[gpt3](GPT3)**
   * resources and projects on gpt3
 
 <br>
 
 
-* ⛓ [crypto tokens](crypto_tokens)
+* ⛓ **[crypto tokens](crypto_tokens)**
   * research on crypto projects in the niche of blockchain-based ai
