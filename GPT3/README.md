@@ -2,6 +2,12 @@
 
 <br>
 
+<img width="215" alt="Screen Shot 2023-03-05 at 8 48 03 PM" src="https://user-images.githubusercontent.com/126520850/223021748-b5ebc341-6e4a-4238-a8f8-cfb2085ede89.png">
+
+<br>
+
+* [vscode chatgpt plugin](https://github.com/mpociot/chatgpt-vscode)
+
 <br>
 
 -----
