@@ -2,6 +2,13 @@
  
 <br>
 
+#### 👉🏼 [reinforcement learning tl; dr](reinforcement_learning.md)
+
+<br>
+
+----
+
+### in this dir
 
 * 🧬 **[quantumai](EBMs)**
   * my adaptation of openai's implicit generation and generalization in energy based models
@@ -17,3 +24,14 @@
 
 * ⛓ **[crypto tokens](crypto_tokens)**
   * research on crypto projects in the niche of blockchain-based ai
+
+
+<br>
+
+----
+
+### resources
+
+<br>
+
+* [go-outside-labs ml-htf-autonomous-agents](https://github.com/go-outside-labs/ml-htf-autonomous-agents)
