@@ -33,3 +33,4 @@
 <br>
 
 * [go-outside-labs ml-htf-autonomous-agents](https://github.com/go-outside-labs/ml-htf-autonomous-agents)
+* [bt3gl's studies on machine learning and ai](https://singularity-sh.vercel.app/archives.html)
