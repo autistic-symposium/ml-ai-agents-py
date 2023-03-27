@@ -2,6 +2,10 @@
  
 <br>
 
+##### 👉🏼 [deep learning tl; dr](deep_learning_tldr.md)
+
+<br>
+
 ### in this dir
 
 * 🧬 **[quantumai](EBMs)**
