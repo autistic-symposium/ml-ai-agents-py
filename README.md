@@ -1,4 +1,4 @@
-## training models with openai's resources
+## deep learning projects, code, resources
  
 <br>
 
