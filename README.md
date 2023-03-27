@@ -2,12 +2,6 @@
  
 <br>
 
-#### 👉🏼 [reinforcement learning tl; dr](reinforcement_learning.md)
-
-<br>
-
-----
-
 ### in this dir
 
 * 🧬 **[quantumai](EBMs)**
