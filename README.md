@@ -2,7 +2,7 @@
  
 <br>
 
-##### 👉🏼 [deep learning tl; dr](deep_learning_tldr.md)
+#### 👉🏼 [deep learning tl; dr](deep_learning_tldr.md)
 
 <br>
 
