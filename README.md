@@ -9,7 +9,7 @@
 ### in this repo
 
 
-* 🎓 **[reinforcement learning](rl)**
+* 🎓 **[reinforcement learning](RL)**
   * resources and projects training reinforcement learning environments.
 
 <br>
