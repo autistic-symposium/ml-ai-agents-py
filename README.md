@@ -6,22 +6,28 @@
 
 <br>
 
-### in this dir
+### in this repo
+
+
+* 🎓 **[reinforcement learning](rl)**
+  * resources and projects training reinforcement learning environments.
+
+<br>
 
 * 🧬 **[quantumai](EBMs)**
-  * my adaptation of openai's implicit generation and generalization in energy based models
+  * my adaptation of openai's implicit generation and generalization in energy based models.
  
  
 <br>
 
 * 🦾 **[gpt3](GPT3)**
-  * resources and projects on gpt3
+  * resources and projects on gpt3.
 
 <br>
 
 
 * ⛓ **[crypto tokens](crypto_tokens)**
-  * research on crypto projects in the niche of blockchain-based ai
+  * research on crypto projects in the niche of blockchain-based ai.
 
 
 <br>
@@ -32,5 +38,5 @@
 
 <br>
 
-* [go-outside-labs ml-htf-autonomous-agents](https://github.com/go-outside-labs/ml-htf-autonomous-agents)
-* [bt3gl's studies on machine learning and ai](https://singularity-sh.vercel.app/archives.html)
+* [go-outside-labs ml-hft-agents](https://github.com/go-outside-labs/ml-htf-agents)
+* [bt3gl's studies on ml and ai](https://singularity-sh.vercel.app/archives.html)
