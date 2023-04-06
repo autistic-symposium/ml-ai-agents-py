@@ -9,7 +9,7 @@
 ### in this repo
 
 * 🤖 **[defi agents](agents)**
- * deep learning strategies for training defi agents.
+  * deep learning strategies for training defi agents.
 
 <br>
 
