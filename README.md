@@ -11,6 +11,7 @@
 * 🤖 **[defi agents](agents)**
  * deep learning strategies for training defi agents.
 
+<br>
 
 * 🎓 **[reinforcement learning](RL)**
   * resources and projects training reinforcement learning environments.
