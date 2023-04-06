@@ -8,6 +8,9 @@
 
 ### in this repo
 
+* 🤖 **[defi agents](agents)**
+ * deep learning strategies for training defi agents.
+
 
 * 🎓 **[reinforcement learning](RL)**
   * resources and projects training reinforcement learning environments.
