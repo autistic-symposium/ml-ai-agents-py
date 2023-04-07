@@ -42,5 +42,4 @@
 
 <br>
 
-* [go-outside-labs ml-hft-agents](https://github.com/go-outside-labs/ml-htf-agents)
 * [bt3gl's studies on ml and ai](https://singularity-sh.vercel.app/archives.html)
