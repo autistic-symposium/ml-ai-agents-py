@@ -17,3 +17,5 @@
 * [Measurable data](https://www.coingecko.com/en/coins/measurable-data-token)
 * [SingularityNET](https://www.coingecko.com/en/coins/singularitynet)
 * [Orainchain](https://www.coingecko.com/en/coins/oraichain-token)
+* [AlpharushAI](https://twitter.com/AlpharushAI)
+* [chain gpt](https://www.chaingpt.org/)
