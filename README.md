@@ -43,4 +43,4 @@
 <br>
 
 * [bt3gl's studies on ml and ai](https://singularity-sh.vercel.app/archives.html)
-* [goat, the globally open ai transfer protocol](https://ipfs.io/ipfs/QmYyucgBQVfs9JXZ2MtmkGPAhgUjNgyGE6rcJT1KybQHhp/index.html0)
+* [goat, the globally open ai transfer protocol](https://ipfs.io/ipfs/QmYyucgBQVfs9JXZ2MtmkGPAhgUjNgyGE6rcJT1KybQHhp/index.html)
