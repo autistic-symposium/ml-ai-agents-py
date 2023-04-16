@@ -16,11 +16,9 @@
 
 <br>
 
-* [learning to trade with reinforcement learning](https://dennybritz.com/posts/wildml/learning-to-trade-with-reinforcement-learning/)
-  - denny delights us by showing that training reinforcement learning agents to trade in cryptocurrency markets is quite an interesting problem.
+* [learning to trade with reinforcement learning, by denny britz](https://dennybritz.com/posts/wildml/learning-to-trade-with-reinforcement-learning/)
   
-* [building artificial intelligence trading systems](https://dennybritz.com/posts/building-ai-trading-systems/)
-  - another gem from denny. "the market does not exist" and "specialization is often where the edge in trading comes from".
+* [building artificial intelligence trading systems, by denny britz](https://dennybritz.com/posts/building-ai-trading-systems/)
 
 * [list of cexes at coinglass](https://www.coinglass.com/)
 
