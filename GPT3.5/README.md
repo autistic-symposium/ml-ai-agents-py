@@ -1,4 +1,4 @@
-## gpt3
+## GPT3 or 4, who knows?
 
 <br>
 
@@ -18,3 +18,4 @@
 * [calculate time complexity](https://platform.openai.com/playground/p/default-time-complexity?model=text-davinci-003)
 * [text to programmatic command](https://platform.openai.com/playground/p/default-text-to-command?model=text-davinci-003)
 * [travel hero, by dabit](https://gpt-travel-advisor.vercel.app/)
+* [vitalik and his fun time travel experiment](https://vitalik.ca/general/2023/04/14/traveltime.html)
