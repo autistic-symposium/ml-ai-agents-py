@@ -24,7 +24,7 @@
  
 <br>
 
-* 🦾 **[gpt3](GPT3)**
+* 🦾 **[gpt3](GPT3.5)**
   * resources and projects on gpt3.
 
 <br>
