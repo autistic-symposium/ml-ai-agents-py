@@ -2,11 +2,9 @@
  
 <br>
 
-#### 👉🏼 [deep learning tl; dr](deep_learning_tldr.md)
+*  👉🏼 **[deep learning tl; dr](deep_learning_tldr.md)**
 
 <br>
-
-### in this repo
 
 * 🤖 **[defi agents](agents)**
   * deep learning strategies for training defi agents.
@@ -38,7 +36,7 @@
 
 ----
 
-### resources
+### external resources
 
 <br>
 
