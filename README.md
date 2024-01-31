@@ -36,11 +36,12 @@
 
 ----
 
-### external resources
+### resources
 
 <br>
 
-* **[training defi agents with deep learning, by bt3gl](https://mirror.xyz/steinkirch.eth/DKaWYobU7q3EvZw8x01J7uEmF_E8PfNN27j0VgxQhNQ)**
-* **[bt3gl's studies on deep learning and machine learning](https://singularity-sh.vercel.app/archives.html)**
+* **[the promise and challenges of crypto + AI applications, by vitalik](https://vitalik.eth.limo/general/2024/01/30/cryptoai.html)**
+* **[on training defi agents with markov chains, by bt3gl](https://mirror.xyz/go-outside.eth/DKaWYobU7q3EvZw8x01J7uEmF_E8PfNN27j0VgxQhNQ)**
 * **[google's jax (composable transformations of numpy programs)](https://github.com/google/jax)**
 * **[goat, the globally open ai transfer protocol](https://ipfs.io/ipfs/QmYyucgBQVfs9JXZ2MtmkGPAhgUjNgyGE6rcJT1KybQHhp/index.html)**
+
