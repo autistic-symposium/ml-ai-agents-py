@@ -8,7 +8,7 @@ tqdm==4.46.0
 matplotlib==3.2.1
 mpi4py==3.0.3
 numpy==1.22.0
-Pillow==10.0.1
+Pillow==10.2.0
 baselines==0.1.5
 scikit-image==0.14.2
 scikit_learn
