@@ -27,9 +27,8 @@
 
 <br>
 
-
-* ⛓ **[crypto tokens](crypto_tokens)**
-  * research on crypto projects in the niche of blockchain-based ai.
+* ⛓ **[crypto x ai](crypto_tokens)**
+  * research on crypto projects in the niche of blockchain-based ai (still very early though)
 
 
 <br>
@@ -47,4 +46,4 @@
 * **[google's jax (composable transformations of numpy programs)](https://github.com/google/jax)**
 * **[goat, the globally open ai transfer protocol](https://ipfs.io/ipfs/QmYyucgBQVfs9JXZ2MtmkGPAhgUjNgyGE6rcJT1KybQHhp/index.html)**
 * **[machine learning engineering open book](https://github.com/stas00/ml-engineering)**
-* **[io.net, the internet of GPUs](https://io.net/)**
+
