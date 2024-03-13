@@ -47,4 +47,4 @@
 * **[google's jax (composable transformations of numpy programs)](https://github.com/google/jax)**
 * **[goat, the globally open ai transfer protocol](https://ipfs.io/ipfs/QmYyucgBQVfs9JXZ2MtmkGPAhgUjNgyGE6rcJT1KybQHhp/index.html)**
 * **[machine learning engineering open book](https://github.com/stas00/ml-engineering)**
-
+* **[io.net, the internet of GPUs](https://io.net/)**
