@@ -1,6 +1,10 @@
 ## 🧠📈 high-frequency trading and deep learning
 
+<br>
+<p align="center">
+<img src="https://github.com/go-outside-labs/ml-ai-agents-py/assets/138340846/833b8264-f0cb-4f45-a3a2-986345b376d6" width="60%" align="center" style="padding:1px;border:1px solid black;"/>
 
+<br>
 <br>
 
 #### 👉 start with [basic ta concepts](trading_on_gmx.md), [defi glossary](defi_glossary.md), and [reinforcement learning notes](reinforcement_learning.md)
