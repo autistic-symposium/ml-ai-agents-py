@@ -4,7 +4,7 @@ torch==1.13.1
 torchvision==0.6.0
 six==1.11.0
 imageio==2.8.0
-tqdm==4.46.0
+tqdm==4.66.3
 matplotlib==3.2.1
 mpi4py==3.0.3
 numpy==1.22.0
