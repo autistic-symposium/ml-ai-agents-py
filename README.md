@@ -2,40 +2,19 @@
  
 <br>
 
-*  👉🏼 **[deep learning tl; dr](deep_learning_tldr.md)**
-
-<br>
-
-* 🤖 **[defi agents](agents)**
-  * deep learning strategies for training defi agents.
-
-<br>
-
-* 🎓 **[reinforcement learning](RL)**
-  * resources and projects training reinforcement learning environments.
-
-<br>
-
-* 🧬 **[quantumai](EBMs)**
-  * my adaptation of openai's implicit generation and generalization in energy based models.
- 
- 
-<br>
-
-* 🦾 **[gpt3](GPT3.5)**
-  * resources and projects on gpt3.
-
-<br>
-
-* ⛓ **[crypto x ai](crypto_tokens)**
-  * research on crypto projects in the niche of blockchain-based ai (still very early though)
+#### 👉🏼 **[deep learning tl; dr](deep_learning_tldr.md)**
+#### 👉🏼 **[defi agents](agents)**: deep learning strategies for training defi agents
+#### 👉🏼 **[reinforcement learning](RL)**: resources and projects training reinforcement learning environments
+#### 👉🏼 **[quantumai](EBMs)**: my adaptation of openai's implicit generation and generalization in energy based models
+#### 👉🏼 **[gpt3](GPT3.5)**: resources and projects on gpt3
+#### 👉🏼 **[crypto x ai](crypto_tokens)**: research on crypto projects in the niche of blockchain-based ai (still very early though)
 
 
 <br>
 
 ----
 
-### resources
+### external resources
 
 <br>
 
