@@ -1,19 +1,17 @@
-# QuantumAI: Training EMBs using OpenAI's resources
+## quantum ai: training EMBs using openai's resources
 
 <br>
 
  
-This repository contains my adapted code from [OpenAI's Implicit Generation and Generalization in Energy Based Models](https://arxiv.org/pdf/1903.08689.pdf), plus some  resources from external researchers.
+#### 👉 this repository contains my adapted code from [opeani's implicit generation and generalization in energy based models](https://arxiv.org/pdf/1903.08689.pdf), plus some  resources from external researchers
 
 <br>
 
 ---
 
-## Installing locally
+### installing locally
 
 <br>
-
-### Install the system's requirement
 
 ```bash
 brew install gcc@6
@@ -21,9 +19,7 @@ brew install open-mpi
 brew install pkg-config
 ```
 
-
-
-There is a [bug](https://github.com/open-mpi/ompi/issues/7516) in open-mpi for the specific libraries in this problem (`PMIX ERROR: ERROR`) that can be fixed with:
+* there is a **[bug](https://github.com/open-mpi/ompi/issues/7516)** in open-mpi for the specific libraries in this problem (`PMIX ERROR: ERROR`) that can be fixed with:
 
 ```
 export PMIX_MCA_gds=^ds12
@@ -31,9 +27,12 @@ export PMIX_MCA_gds=^ds12
 
 <br>
 
-### Install requirements.txt
+---
 
-Install Python's requirements in a virtual environment:
+### install requirements.txt
+
+<br>
+
 
 ```bash
 virtualenv venv
@@ -41,15 +40,19 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Note that this is an adapted requirement file since the [OpenAI's original](https://github.com/openai/ebm_code_release/blob/master/requirements.txt) is not complete/correct.
+* note that this is an adapted requirement file since the **[OpenAI's original](https://github.com/openai/ebm_code_release/blob/master/requirements.txt)** is not complete/correct
 
 <br>
 
-### Install MuJoCo
+---
 
-Download and install [MuJoCo](https://www.roboti.us/index.html). 
+### install MuJoCo
 
-You will also need to register for a license, which asks for a machine ID. The documentation on the website is incomplete, so just download the suggested script and run:
+<br>
+
+* download and install **[MuJoCo](https://www.roboti.us/index.html)**
+* you will also need to register for a license, which asks for a machine ID
+* the documentation on the website is incomplete, so just download the suggested script and run:
 
 ```bash
 mv getid_osx getid_osx.dms
@@ -60,11 +63,11 @@ mv getid_osx getid_osx.dms
 
 ---
 
-## Download pre-trained models (exmples)
+### download pre-trained models (examples)
 
 <br>
 
-Download all [pre-trained models](https://sites.google.com/view/igebm/home) and unzip into a local folder `cachedir`:
+* download all [pre-trained models](https://sites.google.com/view/igebm/home) and unzip into a local folder `cachedir`:
 
 ```bash
 mkdir cachedir
@@ -72,39 +75,43 @@ mkdir cachedir
 
 <br>
 
+---
 
-### Setting results directory
+### setting results directory
 
 <br>
 
-OpenAI's original code contains [hardcoded constants that only work on Linux](https://github.com/openai/ebm_code_release/blob/master/data.py#L218). We changed this to a constant (`ROOT_DIR = "./results"`) in the top of `data.py`. 
+* openai's original code contains **[hardcoded constants that only work on Linux](https://github.com/openai/ebm_code_release/blob/master/data.py#L218)**
+* i changed this to a constant (`ROOT_DIR = "./results"`) in the top of `data.py`
 
 <br>
 
 ----
 
-## Running
+### running (parallelization with `mpiexec`)
 
 <br>
 
-### Parallelization with `mpiexec` 
 
-All code supports [`horovod` execution](https://github.com/horovod/horovod), so model training can be increased substantially by using multiple different workers by running each command.
+* all code supports **[`horovod` execution](https://github.com/horovod/horovod)**, so model training can be increased substantially by using multiple different workers by running each command:
+  
 ```
 mpiexec -n <worker_num>  <command>
 ```
 
 <br>
 
-### Examples of Training on example datasets
+---
 
-#### CIFAR-10 Unconditional:
+### CIFAR-10 unconditional
+
+<br>
 
 ```
 python train.py --exp=cifar10_uncond --dataset=cifar10 --num_steps=60 --batch_size=128 --step_lr=10.0 --proj_norm=0.01 --zero_kl --replay_batch --large_model
 ```
 
-This should generate the following output:
+* this should generate the following output:
 
 ```bash
 Instructions for updating:
@@ -151,7 +158,12 @@ Inception score of 1.2397289276123047 with std of 0.0
 
 <br>
 
-#### CIFAR-10 Conditional:
+---
+
+
+### CIFAR-10 conditional
+
+<br>
 
 ```
 python train.py --exp=cifar10_cond --dataset=cifar10 --num_steps=60 --batch_size=128 --step_lr=10.0 --proj_norm=0.01 --zero_kl --replay_batch --cclass
@@ -159,7 +171,11 @@ python train.py --exp=cifar10_cond --dataset=cifar10 --num_steps=60 --batch_size
 
 <br>
 
-#### ImageNet 32x32 Conditional:
+---
+
+### ImageNet 32x32 conditional
+
+<br>
 
 ```
 python train.py --exp=imagenet_cond --num_steps=60  --wider_model --batch_size=32 step_lr=10.0 --proj_norm=0.01 --replay_batch --cclass --zero_kl --dataset=imagenet --imagenet_path=<imagenet32x32 path>
@@ -167,7 +183,9 @@ python train.py --exp=imagenet_cond --num_steps=60  --wider_model --batch_size=3
 
 <br>
 
-#### ImageNet 128x128 Conditional:
+---
+
+### ImageNet 128x128 conditional
 
 ```
 python train.py --exp=imagenet_cond --num_steps=50 --batch_size=16 step_lr=100.0 --replay_batch --swish_act --cclass --zero_kl --dataset=imagenetfull --imagenet_datadir=<full imagenet path>
@@ -175,46 +193,61 @@ python train.py --exp=imagenet_cond --num_steps=50 --batch_size=16 step_lr=100.0
 
 <br>
 
-#### Imagenet Demo
+----
 
-The imagenet_demo.py file contains code to experiments with EBMs on conditional ImageNet 128x128. To generate a gif on sampling, you can run the command:
+### imagenet demo
+
+<br>
+
+* the imagenet_demo.py file contains code to experiments with EBMs on conditional ImageNet 128x128
+* to generate a gif on sampling, you can run the command:
 
 ```
 python imagenet_demo.py --exp=imagenet128_cond --resume_iter=2238000 --swish_act
 ```
 
-The ebm_sandbox.py file contains several different tasks that can be used to evaluate EBMs, which are defined by different settings of task flag in the file. For example, to visualize cross class mappings in CIFAR-10, you can run:
+* the ebm_sandbox.py file contains several different tasks that can be used to evaluate EBMs, which are defined by different settings of task flag in the file
+* for example, to visualize cross class mappings in CIFAR-10, you can run:
 
 ```
 python ebm_sandbox.py --task=crossclass --num_steps=40 --exp=cifar10_cond --resume_iter=74700
 ```
 
+<br>
+
+---
+
+### generalization
 
 <br>
 
-#### Generalization
-
-To test generalization to out of distribution classification for SVHN (with similar commands for other datasets)
+* to test generalization to out of distribution classification for SVHN (with similar commands for other datasets):
+  
 ```
 python ebm_sandbox.py --task=mixenergy --num_steps=40 --exp=cifar10_large_model_uncond --resume_iter=121200 --large_model --svhnmix --cclass=False
 ```
 
-To test classification on CIFAR-10 using a conditional model under either L2 or Li perturbations
+* to test classification on CIFAR-10 using a conditional model under either L2 or Li perturbations
+
 ```
 python ebm_sandbox.py --task=label --exp=cifar10_wider_model_cond --resume_iter=21600 --lnorm=-1 --pgd=<number of pgd steps> --num_steps=10 --lival=<li bound value> --wider_model
 ```
 
 <br>
 
-#### Concept Combination
+----
 
-To train EBMs on conditional dSprites dataset, you can train each model seperately on each conditioned latent in cond_pos, cond_rot, cond_shape, cond_scale, with an example command given below.
+### concept combination
+
+<br>
+
+* to train EBMs on conditional dSprites dataset, you can train each model separately on each conditioned latent in cond_pos, cond_rot, cond_shape, cond_scale, with an example command given below.
 
 ```
 python train.py --dataset=dsprites --exp=dsprites_cond_pos --zero_kl --num_steps=20 --step_lr=500.0 --swish_act  --cond_pos --replay_batch -cclass
 ```
 
-Once models are trained, they can be sampled from jointly by running:
+* once models are trained, they can be sampled from jointly by running:
 
 ```
 python ebm_combine.py --task=conceptcombine --exp_size=<exp_size> --exp_shape=<exp_shape> --exp_pos=<exp_pos> --exp_rot=<exp_rot> --resume_size=<resume_size> --resume_shape=<resume_shape> --resume_rot=<resume_rot> --resume_pos=<resume_pos>
