@@ -6,8 +6,8 @@
 
 <br>
 
-#### 👉 start with [basic ta concepts](trading_on_gmx.md), [defi glossary](defi_glossary.md), and [reinforcement learning notes](reinforcement_learning.md)
-#### 👉 check trading [strategy metrics](strategy_metrics.md), [strategy workflow](strategy_workflow.md), and [deep reinforcement learning](deep_reinforcement_learning.md)
+#### 👉 start with [basic ta concepts](docs/trading_on_gmx.md), [defi glossary](docs/defi_glossary.md), and [reinforcement learning notes](docs/reinforcement_learning.md)
+#### 👉 check trading [strategy metrics](docs/strategy_metrics.md), [strategy workflow](docs/strategy_workflow.md), and [deep reinforcement learning](docs/deep_reinforcement_learning.md)
 
 
 
