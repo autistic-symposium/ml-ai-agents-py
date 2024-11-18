@@ -1,4 +1,4 @@
-## deep learning projects, code, resources
+## resources and experiments for autonomous agents
  
  <br>
 
@@ -12,13 +12,10 @@
 * **[reinforcement learning](agents/reinforcement_learning.md)**
 * **[strategy workflow](agents/strategy_workflow)**
 
-<br>
-
 #### quantum computing and machine learning
 
-* **[energy-based models](EBMs)**: my adaptation of openai's implicit generation and generalization in energy based models
-
-<br>
+* **[energy-based models](EBMs)**:
+  * my adaptation of openai's implicit generation and generalization in energy based models
 
 #### large language models
 
