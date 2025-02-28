@@ -1,4 +1,4 @@
-## deepseek stuff
+## deepseek
 
 <br>
 

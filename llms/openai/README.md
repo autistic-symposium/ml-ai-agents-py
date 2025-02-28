@@ -1,4 +1,4 @@
-## gpt
+## openai
 
 <br>
 

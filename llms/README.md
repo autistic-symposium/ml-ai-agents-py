@@ -2,10 +2,10 @@
 
 <br>
 
-* **[gpt-x](gpt)**
+* **[opeanai](opeanai)**
 * **[claude](claude)**
-* **[eliza](eliza)**
-* **[deepseek](deeepsek)**
+* **[gemini](gemini)**
+* **[deepseek](deepseek)**
 
 <br>
 
