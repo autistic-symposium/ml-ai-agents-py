@@ -2,6 +2,13 @@
 
 <br>
 
+
+* **[my review on gpt-5](gpt-5.md)**
+
+<br>
+
+---
+
 ### cool resources
 
 <br>

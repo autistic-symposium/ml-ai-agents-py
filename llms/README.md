@@ -2,9 +2,8 @@
 
 <br>
 
-* **[gpt-x](gpt)**
+* **[gpt](gpt)**
 * **[claude](claude)**
-* **[eliza](eliza)**
 * **[deepseek](deeepsek)**
 
 <br>
