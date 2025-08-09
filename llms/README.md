@@ -2,8 +2,9 @@
 
 <br>
 
-* **[gpt](gpt)**
-* **[claude](claude)**
+* **[openai](gpt)**
+* **[anthropic](claude)**
+* **[gemini](gemini)
 * **[deepseek](deeepsek)**
 
 <br>
