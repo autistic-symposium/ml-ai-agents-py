@@ -1,10 +1,10 @@
 import tensorflow as tf
-import numpy as np
-
 from tensorflow.python.platform import flags
-flags.DEFINE_bool('proposal_debug', False, 'Print hmc acceptance raes')
+
+flags.DEFINE_bool("proposal_debug", False, "Print hmc acceptance raes")
 
 FLAGS = flags.FLAGS
+
 
 def kinetic_energy(velocity):
     """Kinetic energy of the current velocity (assuming a standard Gaussian)
@@ -20,6 +20,7 @@ def kinetic_energy(velocity):
     kinetic_energy : float
     """
     return 0.5 * tf.square(velocity)
+
 
 def hamiltonian(position, velocity, energy_function):
     """Computes the Hamiltonian of the current position, velocity pair
@@ -44,13 +45,12 @@ def hamiltonian(position, velocity, energy_function):
     """
     batch_size = tf.shape(velocity)[0]
     kinetic_energy_flat = tf.reshape(kinetic_energy(velocity), (batch_size, -1))
-    return tf.squeeze(energy_function(position)) + tf.reduce_sum(kinetic_energy_flat, axis=[1])
+    return tf.squeeze(energy_function(position)) + tf.reduce_sum(
+        kinetic_energy_flat, axis=[1]
+    )
 
-def leapfrog_step(x0,
-                  v0,
-                  neg_log_posterior,
-                  step_size,
-                  num_steps):
+
+def leapfrog_step(x0, v0, neg_log_posterior, step_size, num_steps):
 
     # Start by updating the velocity a half-step
     v = v0 - 0.5 * step_size * tf.gradients(neg_log_posterior(x0), x0)[0]
@@ -83,10 +83,8 @@ def leapfrog_step(x0,
     # return new proposal state
     return x, v
 
-def hmc(initial_x,
-        step_size,
-        num_steps,
-        neg_log_posterior):
+
+def hmc(initial_x, step_size, num_steps, neg_log_posterior):
     """Summary
 
     Parameters
@@ -107,11 +105,13 @@ def hmc(initial_x,
     """
 
     v0 = tf.random_normal(tf.shape(initial_x))
-    x, v = leapfrog_step(initial_x,
-                      v0,
-                      step_size=step_size,
-                      num_steps=num_steps,
-                      neg_log_posterior=neg_log_posterior)
+    x, v = leapfrog_step(
+        initial_x,
+        v0,
+        step_size=step_size,
+        num_steps=num_steps,
+        neg_log_posterior=neg_log_posterior,
+    )
 
     orig = hamiltonian(initial_x, v0, neg_log_posterior)
     current = hamiltonian(x, v, neg_log_posterior)
@@ -119,10 +119,12 @@ def hmc(initial_x,
     prob_accept = tf.exp(orig - current)
 
     if FLAGS.proposal_debug:
-        prob_accept = tf.Print(prob_accept, [tf.reduce_mean(tf.clip_by_value(prob_accept, 0, 1))])
+        prob_accept = tf.Print(
+            prob_accept, [tf.reduce_mean(tf.clip_by_value(prob_accept, 0, 1))]
+        )
 
     uniform = tf.random_uniform(tf.shape(prob_accept))
-    keep_mask = (prob_accept > uniform)
+    keep_mask = prob_accept > uniform
     # print(keep_mask.get_shape())
 
     x_new = tf.where(keep_mask, x, initial_x)

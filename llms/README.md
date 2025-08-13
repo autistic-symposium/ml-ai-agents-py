@@ -2,9 +2,9 @@
 
 <br>
 
-* **[opeanai](opeanai)**
+* **[google's gemini](gemini)**
+* **[openAI](openAI)**
 * **[claude](claude)**
-* **[gemini](gemini)**
 * **[deepseek](deepseek)**
 
 <br>
@@ -17,7 +17,7 @@
 
 #### articles
 
-* **[people cannot distinguish gpt-4 from a human in a turing test, by c. jones et al (2024)](https://arxiv.org/pdf/2405.08007)**
+* **[people cannot distinguish gpt-4 from a human in a turing test, by c.
 
 <br>
 
