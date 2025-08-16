@@ -19,9 +19,10 @@ models)
 
 ---
 
-### cool discussions
+### cool resources
 
 <br>
 
+* **[atom project (on open models for us research & industry)](https://www.atomproject.ai/)**
 * **[vub's response to AI 2027 and his take on defense (2025)](https://vitalik.eth.limo/general/2025/07/10/2027.html)**
 * **[mr. vp jd vance at the ai action summit in paris (2025)](https://www.youtube.com/watch?v=MnKsxnP2IVk)**
