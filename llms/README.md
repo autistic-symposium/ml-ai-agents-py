@@ -2,25 +2,21 @@
 
 <br>
 
-* **[google's gemini](gemini)**
+* **[google](gemini)**
 * **[openAI](openAI)**
 * **[claude](claude)**
 * **[deepseek](deepseek)**
+* **[qwen](qwen)**
 
 <br>
 
 ---
 
-### cool resources
+### resources
 
 <br>
 
-#### articles
-
-* **[people cannot distinguish gpt-4 from a human in a turing test, by c.
-
-<br>
-
-#### code
-
+* **[ollama](https://ollama.com/search)**
+* **[huggingface](https://huggingface.co/)**
+* **[lmarena.ai](https://lmarena.ai/leaderboard)**
 * **[awesome chatgpt prompts](https://github.com/f/awesome-chatgpt-prompts)**
