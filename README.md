@@ -1,4 +1,4 @@
-## the AI toolkit
+## DeSci + AI experiments
 
  <br>
 
@@ -23,7 +23,11 @@ models)
 
 <br>
 
-* **[gpt-5 jailbreak with echo chamber and storytelling (2025)](https://neuraltrust.ai/blog/gpt-5-jailbreak-with-echo-chamber-and-storytelling)**
+* **[gpt@home: why the future of training is decentralized (2025)](https://www.gensyn.ai/articles/gpt-at-home)**
+* **[gpt-5 jailbreak with echo chamber and storytelling
+  (2025)](https://neuraltrust.ai/blog/gpt-5-jailbreak-with-echo-chamber-and-storytelling)**
 * **[atom project (on open models for us research & industry) (2025)](https://www.atomproject.ai/)**
 * **[vub's response to AI 2027 and his take on defense (2025)](https://vitalik.eth.limo/general/2025/07/10/2027.html)**
 * **[mr. vp jd vance at the ai action summit in paris (2025)](https://www.youtube.com/watch?v=MnKsxnP2IVk)**
+* **[decentralized training looms, by pluralis (2024)](https://blog.pluralis.ai/p/decentralized-ai-looms)**
+* **[decentralized intelligence: bittensor's vision (2023)](https://plaintextcapital.com/blog/bittensors_ai_vision/)**
