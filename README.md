@@ -23,6 +23,15 @@ models)
 
 <br>
 
+#### ai + science
+
+* **[NASA + IBM with AI model that predicts the sun's damaging flares (2025)](https://www.youtube.com/watch?v=KWMoF97C1Ds)**
+
+<br>
+
+##### ai and agi
+
+
 * **[gpt@home: why the future of training is decentralized (2025)](https://www.gensyn.ai/articles/gpt-at-home)**
 * **[gpt-5 jailbreak with echo chamber and storytelling
   (2025)](https://neuraltrust.ai/blog/gpt-5-jailbreak-with-echo-chamber-and-storytelling)**
